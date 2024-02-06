@@ -2,7 +2,6 @@
 import { useMemo, useEffect, useState } from "react";
 
 import Facts from './facts';
-import { AutoComplete } from 'primereact/autocomplete';
 
 interface RosterEntry {
   name: string
@@ -30,7 +29,7 @@ function Roster(props: any) {
 
 
 function Form(props: any) {
-  const { updateRoster, currentRound, currentTeam, suggestions } = props;
+  const { updateRoster, currentRound, currentTeam, rounds, suggestions } = props;
 
   const [currentName, setCurrentName] = useState('')
   const onInput = (e: any) => {
@@ -49,7 +48,7 @@ function Form(props: any) {
 
   return (
     <>
-      <span>{currentRound}. {currentTeam}</span>
+      <span>{currentRound}/{rounds}. {currentTeam}</span>
       <form onSubmit={onSubmit} autoComplete="off">
         <input id="current" list="optList" type="text" value={currentName} onInput={onInput} />
         <datalist id="optList">
@@ -100,7 +99,7 @@ export default function Game(props: any) {
     <>
       {isDone ?
         (<big>{isWin ? "✅ win! ✅" : "❌ lose! ❌"}</big>) :
-        (<Form currentTeam={currentTeam} currentRound={currentRound} updateRoster={updateRoster} suggestions={suggestions} />)
+        (<Form currentTeam={currentTeam} currentRound={currentRound} rounds={rounds} updateRoster={updateRoster} suggestions={suggestions} />)
       }
       <Roster roster={roster} target={target} />
     </>

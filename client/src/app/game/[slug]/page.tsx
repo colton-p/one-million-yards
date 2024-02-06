@@ -13,7 +13,6 @@ export function generateStaticParams() {
 
 
 export default function Home({ params }: { params: { slug: string } }) {
-
   const { title, rounds, target, data_file } = (game_configs as any)[params.slug];
   const data = require(`./data/${data_file}`)
   return (
