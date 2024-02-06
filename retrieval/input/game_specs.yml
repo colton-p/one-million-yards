@@ -1,0 +1,35 @@
+mlb-hr:
+  title: MLB home runs
+  targets:
+    5: 3000
+    20: 11_500
+mlb-so:
+  title: MLB strikeouts
+  targets:
+    5: 20_000
+    20: 68_000
+nba-points:
+  title: NBA points
+  targets:
+    5: 150_000
+    20: 550_000
+nfl-pass_yds:
+  title: NFL passing yards
+  targets:
+    5: 300_000
+    20: 1_000_000
+nfl-rush_yds:
+  title: NFL rushing yards
+  targets:
+    5: 67_500
+    20: 242_500
+nhl-goals:
+  title: NHL goals 
+  targets:
+    5: 3500
+    20: 12750
+nhl-wins:
+  title: NHL wins 
+  targets:
+    5: 2300
+    20: 8200
