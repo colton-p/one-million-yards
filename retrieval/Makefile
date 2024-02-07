@@ -11,4 +11,4 @@ output/game_specs.json: make_games.py input/game_specs.yml
 
 output/facts/*.json: make_facts.py pages/*.py
 	-mkdir output/facts
-	python make_facts.py --limit 10
+	python make_facts.py
