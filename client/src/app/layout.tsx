@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import 'simpledotcss/simple.css'
+
 export const metadata: Metadata = {
   title: "1 Million Yards",
 };
@@ -13,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"/>
       </head>
       <body>
         {children}
