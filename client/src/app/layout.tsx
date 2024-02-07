@@ -19,7 +19,8 @@ export default function RootLayout({
         {children}
         <footer>
           <Link href="/game">other games</Link> |&nbsp;
-          <Link href="/about">about</Link>
+          <Link href="/about">about</Link> |&nbsp;
+          <Link href="https://github.com/colton-p/one-million-yards">github</Link>
         </footer>
       </body>
     </html>
