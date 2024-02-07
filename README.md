@@ -1,5 +1,8 @@
 # One million yards
 
+one million yards: https://colton-p.github.io/one-million-yards/
+
+other games: https://colton-p.github.io/one-million-yards/games
 
 ### How to play
 Goal: accumulate one million yards of career passing yards, over twenty rounds.
