@@ -12,8 +12,8 @@ interface RosterEntry {
 function Roster(props: any) {
   const roster: RosterEntry[] = props.roster;
 
-  const rosterEl = roster.map(({ name, team, score }) => {
-    return (<li key={name}><code>{score}</code> {name} <i>{team}</i></li>);
+  const rosterEl = roster.map(({ name, team, score }, ix) => {
+    return (<li key={ix}><code>{score}</code> {name} <i>{team}</i></li>);
   });
   const score = roster.reduce(((sum, { score }) => sum + score), 0);
 
@@ -48,7 +48,7 @@ function Form(props: any) {
 
   return (
     <>
-      <span>{currentRound}/{rounds}. {currentTeam}</span>
+      <p>{currentRound} / {rounds}. <b>{currentTeam}</b></p>
       <form onSubmit={onSubmit} autoComplete="off">
         <input id="current" list="optList" type="text" value={currentName} onInput={onInput} />
         <datalist id="optList">
@@ -61,26 +61,25 @@ function Form(props: any) {
 }
 
 export default function Game(props: any) {
-
   const { rounds, target } = props;
   const facts = new Facts(props.facts);
 
-
   const [roster, setRoster] = useState(([] as RosterEntry[]));
-
   const [currentTeam, setCurrentTeam] = useState('')
   const [currentRound, setCurrentRound] = useState(1)
 
   useEffect(() => setCurrentTeam(facts.randomTeam()), []);
 
   const score = roster.reduce(((sum, { score }) => sum + score), 0);
-  const isWin = score > target;
+  const isWin = score >= target;
   const isDone = currentRound > rounds;
 
   const updateRoster = (name: string) => {
+    if (roster.map(({name}) => name).includes(name)) {
+      return false;
+    }
 
     const score = (facts.validForTeam(name, currentTeam) ? facts.score(name) : 0);
-
     const newEntry = {
       name: name,
       team: currentTeam,
