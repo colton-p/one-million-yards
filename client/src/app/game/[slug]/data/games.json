@@ -1,86 +1,86 @@
 {
-    "mlb-hr-small": {
-        "title": "MLB home runs",
-        "rounds": 5,
-        "target": 3000,
-        "data_file": "mlb-hr.json"
-    },
-    "mlb-hr-big": {
-        "title": "MLB home runs",
-        "rounds": 20,
-        "target": 11500,
-        "data_file": "mlb-hr.json"
-    },
-    "mlb-so-small": {
-        "title": "MLB strikeouts",
-        "rounds": 5,
-        "target": 20000,
-        "data_file": "mlb-so.json"
-    },
-    "mlb-so-big": {
-        "title": "MLB strikeouts",
-        "rounds": 20,
-        "target": 68000,
-        "data_file": "mlb-so.json"
-    },
-    "nba-points-small": {
-        "title": "NBA points",
-        "rounds": 5,
-        "target": 150000,
-        "data_file": "nba-points.json"
-    },
-    "nba-points-big": {
-        "title": "NBA points",
-        "rounds": 20,
-        "target": 550000,
-        "data_file": "nba-points.json"
-    },
-    "nfl-pass_yds-small": {
-        "title": "NFL passing yards",
-        "rounds": 5,
-        "target": 300000,
-        "data_file": "nfl-pass_yds.json"
-    },
-    "nfl-pass_yds-big": {
-        "title": "NFL passing yards",
-        "rounds": 20,
-        "target": 1000000,
-        "data_file": "nfl-pass_yds.json"
-    },
-    "nfl-rush_yds-small": {
-        "title": "NFL rushing yards",
-        "rounds": 5,
-        "target": 67500,
-        "data_file": "nfl-rush_yds.json"
-    },
-    "nfl-rush_yds-big": {
-        "title": "NFL rushing yards",
-        "rounds": 20,
-        "target": 242500,
-        "data_file": "nfl-rush_yds.json"
-    },
-    "nhl-goals-small": {
-        "title": "NHL goals",
-        "rounds": 5,
-        "target": 3500,
-        "data_file": "nhl-goals.json"
-    },
-    "nhl-goals-big": {
-        "title": "NHL goals",
-        "rounds": 20,
-        "target": 12750,
-        "data_file": "nhl-goals.json"
-    },
-    "nhl-wins-small": {
-        "title": "NHL wins",
-        "rounds": 5,
-        "target": 2300,
-        "data_file": "nhl-wins.json"
-    },
-    "nhl-wins-big": {
-        "title": "NHL wins",
-        "rounds": 20,
-        "target": 8200,
-        "data_file": "nhl-wins.json"
-    }
+  "mlb-hr-5": {
+    "title": "MLB home runs",
+    "rounds": 5,
+    "target": 3000,
+    "data_file": "mlb-hr.json"
+  },
+  "mlb-hr-20": {
+    "title": "MLB home runs",
+    "rounds": 20,
+    "target": 11500,
+    "data_file": "mlb-hr.json"
+  },
+  "mlb-so-5": {
+    "title": "MLB strikeouts",
+    "rounds": 5,
+    "target": 20000,
+    "data_file": "mlb-so.json"
+  },
+  "mlb-so-20": {
+    "title": "MLB strikeouts",
+    "rounds": 20,
+    "target": 68000,
+    "data_file": "mlb-so.json"
+  },
+  "nba-points-5": {
+    "title": "NBA points",
+    "rounds": 5,
+    "target": 150000,
+    "data_file": "nba-points.json"
+  },
+  "nba-points-20": {
+    "title": "NBA points",
+    "rounds": 20,
+    "target": 550000,
+    "data_file": "nba-points.json"
+  },
+  "nfl-pass_yds-5": {
+    "title": "NFL passing yards",
+    "rounds": 5,
+    "target": 300000,
+    "data_file": "nfl-pass_yds.json"
+  },
+  "nfl-pass_yds-20": {
+    "title": "NFL passing yards",
+    "rounds": 20,
+    "target": 1000000,
+    "data_file": "nfl-pass_yds.json"
+  },
+  "nfl-rush_yds-5": {
+    "title": "NFL rushing yards",
+    "rounds": 5,
+    "target": 67500,
+    "data_file": "nfl-rush_yds.json"
+  },
+  "nfl-rush_yds-20": {
+    "title": "NFL rushing yards",
+    "rounds": 20,
+    "target": 242500,
+    "data_file": "nfl-rush_yds.json"
+  },
+  "nhl-goals-5": {
+    "title": "NHL goals",
+    "rounds": 5,
+    "target": 3500,
+    "data_file": "nhl-goals.json"
+  },
+  "nhl-goals-20": {
+    "title": "NHL goals",
+    "rounds": 20,
+    "target": 12750,
+    "data_file": "nhl-goals.json"
+  },
+  "nhl-wins-5": {
+    "title": "NHL wins",
+    "rounds": 5,
+    "target": 2300,
+    "data_file": "nhl-wins.json"
+  },
+  "nhl-wins-20": {
+    "title": "NHL wins",
+    "rounds": 20,
+    "target": 8200,
+    "data_file": "nhl-wins.json"
+  }
 }
