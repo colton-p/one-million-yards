@@ -72,13 +72,29 @@ def summary():
 
             print(f'{name:16s} {min(vals):7d} {max(vals):7d} {best:7d}')
 
-    #import matplotlib.pyplot as plt
-    #fig, axs = plt.subplots()
-    #axs.hist(vals, bins=40)
-    #plt.show()
+def histograms():
+    import matplotlib.pyplot as plt
+    game_specs = yaml.load(open("input/game_specs.yml", "r"), Loader=yaml.Loader)
+
+    for spec_name in game_specs:
+        filename = f"output/facts/{spec_name}.json"
+        name = f'{spec_name}-20'
+        data = json.load(open(filename, "r"))
+        sim = Simulator(data)
+
+        vals = [sim.sim_one(k=20) for _ in range(10000)]
+
+        fig, axs = plt.subplots()
+        axs.hist(vals, bins=40)
+        axs.set_title(name)
+        plt.savefig(f'output/histograms/{name}.png')
+
+
 
 
 if __name__ == "__main__":
     check_win_conditions()
     print('')
     summary()
+    print('')
+    histograms()
